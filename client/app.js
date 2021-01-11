@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
 const cors = require('cors');
-const port = process.env.PORT;
+const port = process.env.PORT || 8081;
 const app = express();
 const http = require('http').Server(app);
 const io = require('socket.io')(http);
